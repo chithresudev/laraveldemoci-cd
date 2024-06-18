@@ -56,7 +56,9 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no ubuntu@13.202.126.158 << 'EOF'
             cd /var/www/html/demolaravel
-            git pull origin main --force
+            git fetch origin
+            git reset --hard origin/main
+            git pull origin main
             php artisan migrate --force
             php artisan op:cl
             sudo service apache2 restart
