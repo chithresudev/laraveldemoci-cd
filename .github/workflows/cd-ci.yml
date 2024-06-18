@@ -59,6 +59,7 @@ jobs:
             git fetch origin
             git reset --hard origin/main
             git pull origin main
+            composer update
             php artisan migrate --force
             php artisan op:cl
             sudo service apache2 restart
