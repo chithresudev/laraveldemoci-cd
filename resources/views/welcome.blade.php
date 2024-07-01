@@ -943,7 +943,7 @@
                 </header>
 
                 <main class="mt-6">
-                    <h1>Welcome </h1>
+                    <h1>Welcome to java</h1>
 
                     <div class="grid gap-6 lg:grid-cols-2 lg:gap-8">
                         <a href="https://laravel.com/docs" id="docs-card"
